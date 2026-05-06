@@ -1,0 +1,333 @@
+/* ============================================================
+   MOBILE.CSS — Full responsive stylesheet for Android & iOS
+   Breakpoints: 900px | 768px | 480px | 375px
+   ============================================================ */
+
+/* ── GLOBAL ── */
+@media (max-width: 900px) {
+  .container { padding-inline: 5%; }
+  .section    { padding-block: 4rem; }
+}
+
+/* ══════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  #navbar { padding: 1rem 5%; }
+
+  .nav-left { gap: .6rem; }
+
+  .nav-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-followers { display: none; }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 3, 15, .97);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+    font-size: 1.1rem;
+    z-index: 100;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 1.1rem; letter-spacing: .08em; }
+
+  .nav-toggle { display: flex; z-index: 101; }
+}
+
+/* ══════════════════════════════════════════
+   HERO SECTION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  #hero { min-height: 100svh; padding-top: 80px; }
+
+  .hero-content {
+    padding-inline: 6%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-badge { font-size: .78rem; }
+
+  .hero-name {
+    font-size: clamp(2rem, 9vw, 3rem);
+    text-align: center;
+  }
+
+  .hero-role { font-size: 1rem; }
+
+  .hero-desc {
+    font-size: .9rem;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: .85rem;
+    width: 100%;
+  }
+  .hero-cta .btn { width: 80%; text-align: center; }
+
+  .hero-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .hero-meta-sep { display: none; }
+
+  .hero-socials { justify-content: center; }
+
+  .hero-stats-row {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .hero-stat-item { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .hero-name { font-size: clamp(1.7rem, 8vw, 2.4rem); }
+  .name-break { display: block; }
+  .hero-cta .btn { width: 90%; }
+  .hero-stats-row { gap: .85rem; }
+}
+
+/* ══════════════════════════════════════════
+   ABOUT SECTION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-text { text-align: center; }
+  .about-text .btn { display: block; text-align: center; }
+
+  .about-card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .stat { padding: 1.2rem .8rem; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-card .stat:last-child {
+    grid-column: span 2;
+  }
+}
+
+/* ══════════════════════════════════════════
+   EXPERIENCE SECTION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .experience-intro {
+    margin-bottom: 2rem;
+  }
+  .experience-intro p {
+    font-size: .9rem;
+    padding-left: .9rem;
+  }
+
+  .timeline { padding-left: 0; }
+
+  .timeline::before { left: 12px; }
+
+  .timeline-item { padding-left: 40px; }
+
+  .timeline-dot { left: 5px; width: 14px; height: 14px; }
+
+  .timeline-card { padding: 1.1rem 1.2rem; }
+  .timeline-card h3 { font-size: .98rem; }
+}
+
+/* ══════════════════════════════════════════
+   SKILLS SECTION
+══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: .85rem;
+  }
+
+  .skill-card { padding: 1.4rem 1rem; }
+  .skill-icon { font-size: 1.6rem; }
+  .skill-card h3 { font-size: .92rem; }
+}
+
+@media (max-width: 360px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════
+   PROJECTS SECTION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .projects-grid--centered {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+
+  .project-img { height: 180px; }
+
+  .project-body { padding: 1.2rem; }
+  .project-body h3 { font-size: 1.05rem; }
+
+  .project-subtitle { font-size: .74rem !important; }
+
+  .projects-more {
+    font-size: .82rem;
+    margin-top: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid--centered { max-width: 100%; }
+  .project-img { height: 160px; }
+}
+
+/* ══════════════════════════════════════════
+   CONTACT SECTION
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .contact-container { max-width: 100%; padding-inline: 5%; }
+
+  .contact-sub { margin-bottom: 2rem; font-size: .88rem; }
+
+  .form-row { grid-template-columns: 1fr; gap: 1rem; }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: .9rem 1rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-detail-item {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .contact-socials-row {
+    gap: .7rem;
+  }
+
+  .contact-social-btn {
+    font-size: .82rem;
+    padding: .55rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-socials-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-social-btn { justify-content: center; }
+}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 5%;
+    gap: 1.2rem;
+  }
+
+  .social-links { justify-content: center; }
+}
+
+/* ══════════════════════════════════════════
+   BACK TO TOP BUTTON
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  #back-to-top {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* ══════════════════════════════════════════
+   SECTION TITLES
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* ══════════════════════════════════════════
+   TOUCH TARGETS — all tappable elements
+   minimum 44×44px per Android guidelines
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .btn,
+  .btn-link,
+  .hero-social-link,
+  .contact-social-btn,
+  .social-links a,
+  #nav-follow-btn,
+  .nav-follow-btn,
+  .follow-btn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn { min-width: 120px; }
+}
+
+/* ══════════════════════════════════════════
+   PREVENT HORIZONTAL SCROLL
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; max-width: 100vw; }
+
+  .hero-orb-1,
+  .hero-orb-2 { display: none; }
+}
+
+/* ══════════════════════════════════════════
+   SMALL PHONES — 375px and below
+══════════════════════════════════════════ */
+@media (max-width: 375px) {
+  .section { padding-block: 3rem; }
+  .hero-content { padding-inline: 4%; }
+  .hero-name { font-size: 1.65rem; }
+  .hero-desc { font-size: .85rem; }
+  .timeline-card { padding: 1rem; }
+  .skill-card { padding: 1.1rem .8rem; }
+}

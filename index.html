@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Ishaq Siddique Akbar — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <div class="nav-brand">MI</div>
+      <div class="nav-followers">
+        <div class="nav-followers-avatars">
+          <span class="nf-avatar"></span>
+          <span class="nf-avatar"></span>
+          <span class="nf-avatar"></span>
+        </div>
+        <div class="nav-followers-text">
+          <strong id="nav-follower-count">15,000</strong>
+          <span>Followers</span>
+        </div>
+        <button id="nav-follow-btn" class="nav-follow-btn">+ Follow</button>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video.mp4.mp4" type="video/mp4" />
+      <source src="assets/video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Available for Projects
+      </div>
+
+      <h1 class="hero-name">Mohammed Ishaq<br class="name-break">Siddique Akbar</h1>
+
+      <p class="hero-role">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </p>
+
+      <p class="hero-desc">
+        Building high-performance web experiences through clean code and intentional design —
+        from concept to deployment, I turn ideas into products that make an impact.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+
+
+      <div class="hero-meta">
+        <div class="hero-socials">
+          <a href="mailto:ishaksiddiquee@email.com" aria-label="Email" class="hero-social-link">✉</a>
+          <a href="https://github.com/ishaqsiddique" target="_blank" rel="noopener" aria-label="GitHub" class="hero-social-link">⬡</a>
+          <a href="https://www.linkedin.com/in/ishaqsiddique" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-social-link">in</a>
+          <a href="https://www.youtube.com/channel/UC_FB1tBYf1YU43VZkt6ONOwM" target="_blank" rel="noopener" aria-label="YouTube" class="hero-social-link">▶</a>
+        </div>
+        <span class="hero-meta-sep"></span>
+        <div class="hero-stats-row">
+          <div class="hero-stat-item"><strong>1000+</strong><span>Projects</span></div>
+          <div class="hero-stat-item"><strong>5+</strong><span>Years</span></div>
+          <div class="hero-stat-item"><strong>1000+</strong><span>Clients</span></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section" data-anim>
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a passionate developer who loves crafting clean, meaningful digital experiences.
+            From elegant interfaces to robust back-end logic, I enjoy turning ideas into products
+            people actually want to use.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing to open
+            source, or sketching out the next project idea.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem">Let's Work Together</a>
+        </div>
+        <div class="about-card">
+          <div class="stat"><span class="stat-num" data-target="1000">0</span><span class="stat-label">Projects Completed</span></div>
+          <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat"><span class="stat-num" data-target="1000">0</span><span class="stat-label">Happy Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section section-alt" data-anim>
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-intro">
+        <p>I am a Frontend Web Developer skilled in creating modern, responsive, and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I focus on building clean and professional user interfaces.</p>
+        <p>I have experience in developing multiple personal projects that helped me improve my web development skills and understanding of real-world applications.</p>
+        <p>Along with web development, I am also learning AI technologies and exploring how artificial intelligence can be integrated into modern web solutions.</p>
+        <p>I am continuously improving my skills and always ready to learn new technologies and take on new challenges.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 — 2024</div>
+          <div class="timeline-card">
+            <h3>Frontend Developer</h3>
+            <p class="timeline-org">Web Development</p>
+            <p>Designed and developed modern, responsive websites using HTML, CSS, and JavaScript. Focused on clean UI, cross-browser compatibility, and delivering smooth user experiences across all devices.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 — 2023</div>
+          <div class="timeline-card">
+            <h3>Bachelor's in Computer Science</h3>
+            <p class="timeline-org">University</p>
+            <p>Studied data structures, algorithms, software engineering, and web technologies. Graduated with distinction and multiple project awards.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section" data-anim>
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-intro">
+        <p>I am continuously learning new frameworks and improving my development skills to become a more advanced web developer. I stay updated with modern development standards in both web and AI technologies.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">&#60;/&#62;</div>
+          <h3>Frontend Development</h3>
+          <p>HTML · CSS · JavaScript</p>
+          <p class="skill-note">Modern, responsive &amp; user-friendly websites</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools &amp; Technologies</h3>
+          <p>Git · GitHub · VS Code</p>
+          <p class="skill-note">Version control &amp; development environment</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>AI Tools</h3>
+          <p>ChatGPT · Gemini AI · DeepSeek AI</p>
+          <p class="skill-note">Coding assistance, research &amp; problem-solving</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Website Types</h3>
+          <p>Portfolio · Business · Landing Pages</p>
+          <p class="skill-note">Personal branding &amp; professional websites</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Code Generation</h3>
+          <p>AI-Powered Dev Tools</p>
+          <p class="skill-note">Faster development &amp; smarter workflows</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📈</div>
+          <h3>Currently Learning</h3>
+          <p>New Frameworks · AI Integration</p>
+          <p class="skill-note">Always exploring modern technologies</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section" data-anim>
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid projects-grid--centered">
+
+        <article class="project-card">
+          <div class="project-img project-img--photo">
+            <img src="image/ABOUTUS1.jpg" alt="Roof Care Solution website preview" class="project-thumb" />
+          </div>
+          <div class="project-body">
+            <h3>Roof Care Solution</h3>
+            <p class="project-subtitle">Professional Company Website &mdash; Roofing Industry</p>
+            <p>A complete professional website developed for a large company, Roof Care Solution. The website is performing exceptionally well and is currently ranking among the top websites in Pakistan, appearing around third position in its category.</p>
+            <div class="project-links">
+              <a href="https://roof-care-solutions.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-link">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--photo">
+            <img src="image/swat valley_travelguide-pk.1.jpg" alt="Cities of Pakistan website preview" class="project-thumb" />
+          </div>
+          <div class="project-body">
+            <h3>Cities of Pakistan</h3>
+            <p class="project-subtitle">National-Level Tourism &amp; Heritage Website &mdash; &copy; Original Project</p>
+            <p>A national-level website showcasing all the cities of Pakistan, highlighting their beauty, culture, and natural landscapes. This project represents Pakistan's tourism and heritage in a professional and visually stunning way.</p>
+            <div class="project-links">
+              <a href="https://northern-pakistan-1.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-link">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="projects-more">More projects are on the way &mdash; this portfolio is newly launched and will be updated regularly, InshaAllah.</p>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section section-alt" data-anim>
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">Have a project in mind or just want to say hi? Drop me a message.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <!-- Web3Forms access key — replace with your key from web3forms.com -->
+        <input type="hidden" name="access_key" id="w3f-key" value="9e7b1243-5cea-4cc7-87c8-a59667db70ea" />
+        <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="form-status"></p>
+      </form>
+
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <span class="contact-detail-icon">✉</span>
+          <div>
+            <p class="contact-detail-label">Email</p>
+            <a href="mailto:ishaksiddiquee@email.com" class="contact-detail-value">ishaksiddiquee@email.com</a>
+          </div>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-detail-icon">📞</span>
+          <div>
+            <p class="contact-detail-label">Phone</p>
+            <a href="tel:+923052425174" class="contact-detail-value">0305-2425174</a>
+            <a href="tel:+923062025427" class="contact-detail-value">0306-2025427</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-socials">
+        <p class="contact-socials-label">Follow Me</p>
+        <div class="contact-socials-row">
+          <a href="https://github.com/ishaqsiddique" target="_blank" rel="noopener" class="contact-social-btn" aria-label="GitHub">
+            <span class="csb-icon">⬡</span>
+            <span class="csb-name">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ishaqsiddique" target="_blank" rel="noopener" class="contact-social-btn" aria-label="LinkedIn">
+            <span class="csb-icon">in</span>
+            <span class="csb-name">LinkedIn</span>
+          </a>
+          <a href="https://www.youtube.com/channel/UC_FB1tBYf1YU43VZkt6ONOwM" target="_blank" rel="noopener" class="contact-social-btn" aria-label="YouTube">
+            <span class="csb-icon">▶</span>
+            <span class="csb-name">YouTube</span>
+          </a>
+          <a href="mailto:ishaksiddiquee@email.com" class="contact-social-btn" aria-label="Email">
+            <span class="csb-icon">✉</span>
+            <span class="csb-name">Email</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>&copy; 2026 Mohammed Ishaq Siddique Akbar. All rights reserved.</p>
+    <div class="social-links">
+      <a href="mailto:ishaksiddiquee@email.com" aria-label="Email" title="Email">✉</a>
+      <a href="https://github.com/ishaqsiddique" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">⬡</a>
+      <a href="https://www.linkedin.com/in/ishaqsiddique" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+      <a href="https://www.youtube.com/channel/UC_FB1tBYf1YU43VZkt6ONOwM" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">▶</a>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
