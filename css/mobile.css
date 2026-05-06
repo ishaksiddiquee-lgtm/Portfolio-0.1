@@ -21,7 +21,15 @@
     font-size: 1.3rem;
   }
 
-  .nav-followers { display: none; }
+  .nav-followers-avatars { display: none; }
+
+  .nav-followers {
+    padding: .22rem .5rem .22rem .5rem;
+    gap: .4rem;
+  }
+
+  .nav-followers-text strong { font-size: .68rem; }
+  .nav-followers-text span   { font-size: .55rem; }
 
   .nav-links {
     display: none;
